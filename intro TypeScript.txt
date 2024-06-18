@@ -1,0 +1,319 @@
+Why was TypeScript Developed Despite Having JavaScript?
+
+JavaScript language was introduced as a client-side programming language. But with the usage of JavaScript for web development, developers learned that it could also be considered a server-side programming language.
+
+However, the JavaScript code became quite complex and heavy, too. Therefore, JavaScript could not be able to stand up to the expectations of an object-oriented programming language. As a result, JavaScript will never flourish as a server-side technology in the industry. This is why the TypeScript language was born to bridge this gap.
+
+What’s TypeScript?
+If asked, “What’s better than JavaScript?”, you will surely get an answer – TypeScript.
+
+Developed and maintained by Microsoft, TypeScript is an object-oriented, open-source programming language. It’s a superset of JavaScript, containing optional typing. Also, it compiles to plain JavaScript.
+
+In a nutshell, TypeScript is a statically compiled programming language for writing clear and concise JavaScript code. It’s fulfilling the same purpose as JavaScript and can be used for both client-side and server-side applications. In addition, the libraries of JavaScript are also compatible with TypeScript.
+
+TypeScript is a programming language that supports both dynamic and static typing. It provides classes, visibility scopes, namespaces, inheritance, unions, interfaces, and many other features. Also, it offers comments, variables, statements, expressions, modules, and functions.
+
+You can execute it on Node.Js or any other browser that supports ECMAScript 3 or its latest versions.
+
+Since TypeScript is an enhanced version of JavaScript, all code of JavaScript is syntactically valid TypeScript. However, it doesn’t mean the TypeScript compiler can process all JavaScript:
+
+let a = 'a'; a = 1; // throws: error TS2322: Type '1' is not assignable to type 'string'.
+
+TypeScript provides files that can include type data from current object files, similar to how C++ header files define the creation of current object files. Hence, other apps can use the values defined in files just as TypeScript entities with statically typed values.
+
+You will also find third-party header files for popular libraries like jQuery, D3.js, and MongoDB. There are also TypeScript headers for NodeJs elementary modules, which allow developers to create Node.Js development solutions within TypeScript.
+
+The compiler of TypeScript is assembled in JavaScript and written in TypeScript. It’s registered under Apache License 2.0.
+
+After going through the TypeScript introduction, you must be wondering what would be the objective of adding static typing to JavaScript?
+
+Well, we can clarify your doubts with the given statements:
+
+You can avoid hidden-ninja errors like the classic 'undefined' is not a function.
+Easy to refactor code without breaking it significantly.
+Orienting oneself in large-scale, complex systems is no longer a nightmare.
+As per the study, TypeScript identifies around 15% of all JavaScript errors.
+
+The freedom of dynamic typing frequently leads to errors, which not only reduces the developer’s efficiency but also can grind development due to the increasing expenses of adding new lines of code.
+
+As a result, JavaScript is a poor choice for server-side code in organizations and large codebases due to its lack of types and compile-time error checks.
+
+As their tagline suggests, TypeScript is JavaScript that scales.
+
+Why Do We Need to Use TypeScript?
+As we said earlier, TypeScript is an enhanced version of JavaScript. Therefore, while comparing it with other languages like CoffeeScript (which adds syntactic sugar) or PureScript (which is not similar to JavaScript at all), it’s necessary to learn many things to write TypeScript code.
+
+In TypeScript, types are optional, and any JavaScript file is a valid TypeScript file. While the compiler will notify you if any of your initial files have type issues, it will still provide a JavaScript file that works. TypeScript will stand up to expectations, and it’s simple to improve your skills over time.
+
+Is TypeScript Suitable for Frontend or Backend?
+Since TypeScript is compiled to JavaScript, it is suitable for both the frontend and backend of app development.
+
+Besides, JavaScript is a preferred programming language for the frontend of web pages and apps. As a result, TypeScript may be used for the same reason, but it also works well on the server-side for complicated and large-scale enterprise projects.
+
+However, you can also use other top frontend frameworks like React, Angular, Vue to build next-gen apps.
+
+Types of TypeScript
+TypeScript contains various basic types, such as Number, Array, Tuple, Boolean, String, and many more. Well, some of these types are not available in JavaScript. However, you can learn more about them in TypeScript documentation.
+
+Furthermore, below are some other types which are expressivity of TypeScript:
+
+Any & Unknown
+A type called Any (anything that you wish) can cover unknown is its type-safe system. Here, any allows you to assign and JavaScript variable whenever you want to escape the type system. It’s widely used to describe incoming variables that haven’t been validated yet and whose type is unknown (for example, from third-party APIs).
+
+Unknown is similar to Any, but it will not allow you to do anything with it unless it’s explicitly type-checked.?
+Void
+When there is no value returned, Void is used. Generally, it’s used for the return type of function that returns nothing.
+
+Never
+Never is the return type for something that should never happen, such as an exception-throwing function.
+
+Intersection & Union Types
+These types allow you to create custom types as per the logic.
+
+Intersection types let you combine several basic types into one type. For example, if we create a custom type Person that contains first_name:string and a last_name:string . Well, you can say this as: I want my type to be this and that.
+
+Union types allow you to type to take one of the various basic types. For example, if there’s a query that returns either result:string or undefined, you can say this as: I want my type to be this or that.
+
+All of these sorts make sense when you think of them as spaces.
+
+TypeScript supports both implicit and explicit types. If you don't write your types explicitly, the compiler will enable type inference to identify the types you're using.
+
+On the other hand, writing them explicitly provides benefits, such as assisting other team members who read your code and verifying that what you see is what the compiler sees.
+
+Features of TypeScript
+With the advanced features of TypeScript, it supports additional features of JavaScript, such as object-oriented programming concepts, JS libraries, platform independence, etc.
+
+Compatibility
+TypeScript supports both old and new additional features as well. However, it’s compatible with all the versions of JavaScript, like ES7 and ES12. It can compile the completed code in ES7 back to ES5 and vice versa. This makes sure to have a smooth transition and language portability.
+
+Static Typing
+Static Typing means wherein the developer has to declare the variable type.
+
+Suppose we take variable name str. The code will not run until you give it a type, such as an Integer, Float, List, or anything else. And TypeScript is statically typed.
+
+Static Typing helps you with early bugs detection, faster code completion, and more.
+
+Now, allow us to give you other prominent features here:
+
+It's easy to maintain and boosts project productivity.
+Feasible to use static typing and annotations
+Supports object-oriented features such as interfaces, inheritance, and classes
+Debugging is simple, and problems are detected at an early stage.
+Supports ES6 (ECMAScript), which provides a simpler syntax for handling objects and inheritance.
+Full-featured IDE support
+Advantages of TypeScript
+TypeScript offers various advantages which could help you write a better programming language for web development solutions.
+
+Language Features
+Here are other features that TypeScript supports.
+
+Namespaces
+Interfaces
+Null Checking
+Generics
+Access Modifiers
+Optional Parameters
+// -- TypeScript -- //
+function log(message: string = null) { }
+// -- TypeScript compiled output -- //
+function log(message) {
+if (message === void 0) { message = null; }
+}
+
+// -- JavaScript with Babel -- //
+function Log(message = null) { }
+// -- Babel compiled output -- //
+"use strict";
+function Log() {
+var message = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+}
+
+Classes
+// -- TypeScript -- //
+class Article {
+name: string;
+constructor(name: string) {
+this.name = name;
+}
+}
+// -- TypeScript compiled output -- //
+var Article = /** @class */ (function () {
+function Article(name) {
+this.name = name;
+}
+return Article;
+}());
+
+// -- JavaScript with Babel -- //
+class Article {
+constructor(name) {
+this.name = name;
+}
+}
+// -- Babel compiled output -- //
+"use strict";
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var Article = function Article(name) {
+_classCallCheck(this, Article);
+this.name = name;
+};
+
+What’s JavaScript?
+JavaScript – a scripting language, is used to develop interactive web pages. It adheres to the rules of client-side programming; hence, it executes seamlessly in the user’s web browser. However, you can use JavaScript with other technologies like XML and REST APIs.
+
+The primary purpose of JS was to make it a complementary scripting language, similar to how Visual Basic is to C++. However, JavaScript is not suitable for large-level complex applications. It was aimed to write only a few hundred lines of code for an app.
+
+Here are some unique features that JavaScript offers:
+
+Flexible, dynamic, and cross-platform
+It can be used for both client-side and server-side
+Lightweight interpreted
+All browsers support
+Weakly typed
+JIT compilation
+
+Difference Between TypeScript and JavaScript
+While comparing two programming languages – TypeScript and JavaScript, we have to consider many factors, which are as below:
+
+1) Learning Curve
+TypeScript is a superset of JavaScript. To write a TypeScript code, you should have a basic understanding and knowledge of JavaScript. Besides, you should be clear with the OOPS concept as well.
+
+On the other hand, JavaScript is a popular and easy-to-learn scripting language. Many developers use JavaScript with CSS and HTML to create web applications. However, HTML is tough as it contains event handling, web behavior, animations, and scripting.
+
+2) Developers Community
+TypeScript gained its popularity in a short time and was implemented by many enterprises. You will find many tutorials and guides available on the Internet to learn TypeScript. However, it has a very active and supportive community.
+
+On the flip side, JavaScript doesn’t have a large community as compared to TypeScript. JavaScript offers many libraries, frameworks, and code practices. Therefore, it’s advisable to know your web development team structure that best suits your business needs for overall team performance.
+
+3) Performance
+As we know, TypeScript was created to overcome the challenges of JavaScript for large-level complex applications. Hence, TypeScript saves development time and allows developers to become more efficient.
+
+The only difference between TypeScript and JavaScript is that TypeScript code is compiled into JavaScript before execution.
+
+4) Syntax
+TypeScript offers variable declaration, functional paradigm, and type system, which JavaScript doesn’t offer. It’s similar to JScript and .Net in terms of syntax, with support for ECMAScript 2015 Standard features including modules, an arrow function syntax, and classes.
+
+JavaScript follows the ECMAScript definition as well. However, it’s not a typed language like TypeScript. It uses many structured programming terminologies from C, like if statements, switch statements, do-while loops, and many more. It offers event-driven style, functional and imperative programming.
+
+5) Tools and Frameworks
+Since Microsoft backs TypeScript, it has many leading frameworks and editors. Through tight integration with editors, it provides error handling during compilation to avoid errors at runtime.
+
+On the flip side, there are many JavaScript frameworks available in the market for web development project requirements. It's a huge ecosystem that's quite popular among programmers. You can quickly find developers who specialize in ReactJS, VueJS, Angular, and other frameworks.
+
+6) Code
+For TypeScript:
+
+class Person
+{
+private name: string;
+constructor (private name: string)
+{
+this.name = name;
+}
+name()
+{
+return “name is “ + this.name;
+}
+}
+
+For JavaScript:
+
+var Person = (function()
+{
+function Person(personName)
+{
+this.name = personName;
+}
+Person.prototype.name= function()
+{
+return "My name is " + this.name;
+}
+return Person;
+})();
+
+How does TypeScript Differ from JavaScript?
+We know that TypeScript offers more features than JavaScript. TypeScript is a modern-age language – a syntactical superset of JavaScript, whereas JavaScript is a scripting language – a subset of TypeScript.
+
+Actually, some developers may get confused between object-oriented and functional programming languages. However, you can distinguish between functional programming vs objected-oriented programming language here and know how it differs from each other.
+
+Why Migrate Your Project to TypeScript?
+If you have a large and complex codebase, there are higher chances of errors occurring. However, that would be good if some errors were resolved during the compilation time. This is when you can use TypeScript to reduce errors during compile time. The best part is that the complete Java codebase may be reused as-is.
+
+ Difference Between JavaScript and TypeScript:-
+
+TypeScript:-
+
+Compile Time Type Checking  :- 
+With Vanilla JavaScript, type verification is performed at runtime.However, this adds to the runtime overhead, which may be avoided by conducting compile-time validation.
+
+Huge Projects or Multiple Developers:-	TypeScript runs seamlessly for large projects or when many developers are working together.
+
+Easy to Work with New Libraries or Frameworks:-
+	Suppose, if you are working with React for the development and are not familiar with its APIs, you can get IntelliSense that will help you identify and navigate new interfaces. 
+However, they both offer type definitions
+
+JavaScript :-
+
+Small Projects :-
+TypeScript may be overkill for small projects with fewer codes.
+
+Framework Support :-
+If TypeScript doesn’t support the choice of your framework – EmberJS, then you may not be able to leverage its features.
+
+Build Tools :- 
+To generate the final JavaScript to be run, TypeScript requires a build step. However, developing JavaScript applications without the use of any build tools is becoming increasingly unusual.
+
+Testing Workflow :-
+If your talented JavaScript developers are already using test-driven development, the benefits of switching to TypeScript may not be enough to justify the expenditures.
+
+Should I learn JavaScript or TypeScript?
+
+Well, if you are aware of JavaScript, then it’s easy for you to understand TypeScript. They both languages share the same syntax and run-time behavior.
+
+Being the most popular language, JavaScript offers many resources and a massive developers community. Since both languages are executed in the same way in many cases, TypeScript developers can also benefit from those resources.
+
+Benefits of TypeScript Over JavaScript
+
+1. TypeScript supports static typing. This means that static typing allows type accuracy to be checked at build time.
+
+2. At the time of development, TypeScript identifies the compilation bugs. As a result, the scope of evaluating errors at runtime is very less. JavaScript, on the other hand, is an interpreted language.
+
+3.TypeScript is just JS with some extra functionality, namely ES6 features. The TS compiler can compile .ts files into ECMAScript, albeit it may not be kept in your chosen web browser.
+
+4. As the codebase grows, TypeScript code is simpler to debug since type errors can be found during compilation rather than during runtime.
+
+Will TypeScript Replace JavaScript?
+
+Well, the shortest answer to the above question is NO!
+
+While talking about TypeScript, it is a completely different language except that it inherits the basic nature of JavaScript. Therefore, JavaScript can’t or will not be replaced ever.
+
+JavaScript is one of the popular and fundamental technologies in the software development industry, used by a plethora of developers for both client-side and server-side.
+
+TypeScript, on the other hand, does not execute in web browsers directly. It transcompiles to JavaScript. JavaScript is easier to debug and compile as it executes directly in the web browser. However, TypeScript is not developed for all types of projects. Therefore, both programming languages have their pros and cons along with a set of characteristics. And to walk along with enterprise web development trends, you have to adopt a new technology or framework for better business processes and customer experience.
+
+Conclusion
+In the end, after going through all the insights we have curated in this article, we can say that both languages have pros and cons.
+
+TypeScript is suitable for developers who want to create readable code that is neat and clean. Well, we are not mentioning what TypeScript offers are, including various live-bugs checking, and static typing.
+
+Although JavaScript is not a comprehensive programming language, it can be used with HTML to improve the quality of web pages. Moreover, you will find many experienced developers who are proficient in JavaScript coding.
+
+However, TypeScript, like JavaScript, is not supported by all web browsers. So, if you are in a dilemma of choosing between TypeScript vs JavaScript, you can refer to the above article.
+
+Still not sure which one to choose?
+
+Don’t worry! You can contact the experts from a leading front end development company, Radixweb, and get a free consultation who will help you understand choosing the suitable technology and language for your project requirements. Don’t wait for anymore. Contact us right now!
+
+
+Head-to-Head Comparison: TypeScript vs JavaScript
+TypeScript and JavaScript share many similarities in developing interactive web pages. While providing the head-to-head comparison of TypeScript vs JavaScript, we can say that JavaScript is a lightweight interpreted and dynamic language which is used for augmenting HTML web pages. On the other hand, TypeScript is an enhanced version of JavaScript. This means TypeScript is a combination of JavaScript and some other traits.
+
+TypeScript is an object-oriented programming language developed by Microsoft Corporation, whereas JavaScript is the programming language for the web.
+TypeScript comes with many functionalities like code editors and IDEs, whereas JavaScript has limited built-in tooling functionality.
+TypeScript is an open-source language to build large-scale web apps, whereas JavaScript is a server-side programming language that helps to develop interactive web pages.
+TypeScript is referred to as an Object-oriented programming language; on the other hand, JavaScript is a prototype-based language.
+TypeScript offers static types mean variables, objects, and functions, whereas JavaScript doesn’t require the explicit declaration of the variables before they’re used.
+TypeScript supports multiple interfaces and types to represent data, whereas JavaScript doesn’t support such concepts as interfaces.
+On the other hand, TypeScript is an enhanced version of JavaScript. This means TypeScript is a combination of JavaScript and some other traits.
+
