@@ -1,0 +1,13 @@
+let m:number[]=[20,30,40];
+  m.push(10);
+  m.push(200);
+  console.log("Adding 10 and 200 : " +m);
+
+// delete element 
+ m.pop();
+
+ console.log("delete element:"+m);
+ 
+ //index add 
+ m.splice(2,3,100);
+  console.log("index add in "+m);
