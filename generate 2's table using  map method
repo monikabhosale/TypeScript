@@ -1,0 +1,21 @@
+//2..generate 2's table using  map method
+
+
+let w={
+    
+    id:1,
+    "name" :"monika",
+"email":"monikabhosale1303@gmail.com",
+"salary":"35000",
+"gender":"female",
+"mobile_number": "8459328785",
+"department":"IT"
+}
+
+console.log(`
+id          :${w.id}
+name        :${w.email}
+salary      :${w.gender}
+mobile_number:${w.mobile_number}
+department :${w.department}
+`)
